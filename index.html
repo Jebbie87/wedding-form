@@ -4,18 +4,20 @@
 body { display: flex; flex-direction: column }
 </style>
 
+
 <body>
   <h1>YOUR NAME</h1>
   <p>Welcome to my website!</p>
   <button
     style="border-radius: 36px;padding: 11px 31px;display: inline-flex;width: 50%;justify-content: center;align-self: center;"
     id="form-display-button"
-    onclick="getElementById('wedding-form').style.display='block'; getElementById('form-display-button').style.display='none';"
+    onclick="getElementById('wedding-form').style.display='block'; getElementById('form-display-button').style.display='none'; getElementById('wedding-form').scrollIntoView({ behavior: 'smooth', block: 'start' });"
   >
-    Click
+    Fill out form
   </button>
-  <br />
+ 
   <iframe id="wedding-form" style="display: none;" src="https://docs.google.com/forms/d/e/1FAIpQLSdHrQlnEo__gT6AMGqLrEGCpRhjrfDGdJkJ85DTbjhYTxJhYQ/viewform?embedded=true" width="100%" height="1105" frameborder="0" marginheight="0" marginwidth="0" />
+
 </body>
 
 </html>
